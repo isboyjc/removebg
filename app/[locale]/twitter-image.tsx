@@ -3,7 +3,7 @@ import type { Locale } from "@/i18n/config"
 
 export const runtime = "edge"
 
-export const alt = "Remove BG - AI Background Remover | RMBG-1.4 & U2Net"
+export const alt = "RemoveBG PicGo - AI Background Remover | RMBG-1.4 & U2Net"
 export const size = {
   width: 1200,
   height: 630,
@@ -138,7 +138,7 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
               letterSpacing: "-2px",
             }}
           >
-            Remove BG
+            RemoveBG PicGo
           </div>
 
           {/* 副标题 */}

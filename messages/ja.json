@@ -6,7 +6,7 @@
     "toggle": "テーマを切り替え"
   },
   "metadata": {
-    "title": "Remove BG - AI背景除去ツール | RMBG-1.4",
+    "title": "RemoveBG PicGo - AI背景除去ツール | RMBG-1.4",
     "description": "無料のオンラインAI背景除去ツール。先進的なRMBG-1.4モデルを使用して画像の背景を瞬時に削除。プライバシー保護のため完全にブラウザ内で実行。登録不要。"
   },
   "nav": {
@@ -175,7 +175,7 @@
   "capabilities": {
     "badge": "強力な機能",
     "title": "なぜ選ぶ",
-    "highlight": "Remove BG",
+    "highlight": "RemoveBG PicGo",
     "description": "AI技術を搭載したプロフェッショナルな背景除去ツール。完全無料でプライバシー重視。",
     "items": {
       "aiPowered": {
@@ -243,7 +243,7 @@
     "badge": "FAQ",
     "title": "よくある",
     "highlight": "質問",
-    "description": "Remove BGに関するよくある質問への回答。",
+    "description": "RemoveBG PicGoに関するよくある質問への回答。",
     "moreQuestions": "他に質問がありますか？",
     "items": {
       "howItWorks": {
@@ -284,12 +284,12 @@
     "beforeAfter": "前後",
     "original": "オリジナル",
     "comparison": "比較",
-    "footerHint": "上記のすべての例は、ブラウザ内でRemove BGによってリアルタイムで処理されました"
+    "footerHint": "上記のすべての例は、ブラウザ内でRemoveBG PicGoによってリアルタイムで処理されました"
   },
   "changelog": {
     "title": "変更",
     "highlight": "履歴",
-    "description": "Remove BGのバージョン更新と新機能を追跡",
+    "description": "RemoveBG PicGoのバージョン更新と新機能を追跡",
     "back": "ホームに戻る",
     "types": {
       "major": "メジャーアップデート",

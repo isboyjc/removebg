@@ -166,13 +166,13 @@ export async function generateMetadata({
   return {
     title: {
       default: t.title,
-      template: `%s | Remove BG`
+      template: `%s | RemoveBG PicGo`
     },
     description: t.description,
     keywords: keywordsByLocale[currentLocale],
     authors: [{ name: "isboyjc", url: "https://github.com/isboyjc" }],
     creator: "isboyjc",
-    publisher: "Remove BG",
+    publisher: "RemoveBG PicGo",
     robots: {
       index: true,
       follow: true,
@@ -205,7 +205,7 @@ export async function generateMetadata({
     appleWebApp: {
       capable: true,
       statusBarStyle: "default",
-      title: "Remove BG",
+      title: "RemoveBG PicGo",
     },
     formatDetection: {
       telephone: false,
@@ -213,8 +213,8 @@ export async function generateMetadata({
     other: {
       "mobile-web-app-capable": "yes",
       "apple-mobile-web-app-capable": "yes",
-      "application-name": "Remove BG",
-      "apple-mobile-web-app-title": "Remove BG",
+      "application-name": "RemoveBG PicGo",
+      "apple-mobile-web-app-title": "RemoveBG PicGo",
       "msapplication-TileColor": "#1A1A1A",
       "msapplication-tap-highlight": "no",
     },
@@ -228,7 +228,7 @@ export async function generateMetadata({
       locale: localeToOGLocale[currentLocale],
       alternateLocale: alternateOGLocales,
       url: siteUrl,
-      siteName: "Remove BG",
+      siteName: "RemoveBG PicGo",
       title: t.title,
       description: t.description,
     },
@@ -304,7 +304,7 @@ export default async function LocaleLayout({
   const webAppJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Remove BG",
+    "name": "RemoveBG PicGo",
     "description": t.description,
     "url": siteUrl,
     "applicationCategory": "MultimediaApplication",
@@ -324,7 +324,7 @@ export default async function LocaleLayout({
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Remove BG",
+      "name": "RemoveBG PicGo",
       "url": siteUrl,
       "logo": {
         "@type": "ImageObject",
@@ -339,7 +339,7 @@ export default async function LocaleLayout({
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Remove BG",
+    "name": "RemoveBG PicGo",
     "url": siteUrl,
     "logo": `${siteUrl}/icons/icon-512x512.png`,
     "sameAs": [

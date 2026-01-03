@@ -52,7 +52,7 @@ export function HowItWorks() {
     "tool": [
       {
         "@type": "HowToTool",
-        "name": "Remove BG PicGo"
+        "name": "RemoveBG PicGo PicGo"
       }
     ],
     "step": steps.map((step, index) => ({

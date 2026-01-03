@@ -78,11 +78,11 @@ const exampleNames: Record<Locale, string> = {
 
 // 各语言的图片描述模板
 const descriptionTemplates: Record<Locale, string> = {
-  zh: "使用Remove BG AI抠图工具处理的{altKey}图片效果展示",
-  en: "{altKey} image processed with Remove BG AI background remover",
-  ja: "Remove BG AI背景除去ツールで処理された{altKey}画像",
-  ko: "Remove BG AI 배경 제거 도구로 처리된 {altKey} 이미지",
-  ru: "{altKey} изображение, обработанное инструментом Remove BG AI",
+  zh: "使用RemoveBG PicGo AI抠图工具处理的{altKey}图片效果展示",
+  en: "{altKey} image processed with RemoveBG PicGo AI background remover",
+  ja: "RemoveBG PicGo AI背景除去ツールで処理された{altKey}画像",
+  ko: "RemoveBG PicGo AI 배경 제거 도구로 처리된 {altKey} 이미지",
+  ru: "{altKey} изображение, обработанное инструментом RemoveBG PicGo AI",
 }
 
 const containerVariants = {

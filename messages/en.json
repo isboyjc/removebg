@@ -6,7 +6,7 @@
     "toggle": "Toggle theme"
   },
   "metadata": {
-    "title": "Remove BG - AI Background Remover | RMBG-1.4",
+    "title": "RemoveBG PicGo - AI Background Remover | RMBG-1.4",
     "description": "Free online AI background remover. Remove image backgrounds instantly using advanced RMBG-1.4 model. Runs entirely in browser for privacy. No registration required."
   },
   "nav": {
@@ -175,7 +175,7 @@
   "capabilities": {
     "badge": "Powerful Features",
     "title": "Why Choose",
-    "highlight": "Remove BG",
+    "highlight": "RemoveBG PicGo",
     "description": "Professional background removal tool with AI technology, completely free and privacy-focused.",
     "items": {
       "aiPowered": {
@@ -243,7 +243,7 @@
     "badge": "FAQ",
     "title": "Frequently Asked",
     "highlight": "Questions",
-    "description": "Find answers to common questions about Remove BG.",
+    "description": "Find answers to common questions about RemoveBG PicGo.",
     "moreQuestions": "Have more questions? Open an issue on",
     "items": {
       "howItWorks": {
@@ -284,12 +284,12 @@
     "beforeAfter": "Before/After",
     "original": "Original",
     "comparison": "Comparison",
-    "footerHint": "All examples above were processed in real-time by Remove BG in the browser"
+    "footerHint": "All examples above were processed in real-time by RemoveBG PicGo in the browser"
   },
   "changelog": {
     "title": "Change",
     "highlight": "Log",
-    "description": "Track Remove BG version updates and new features",
+    "description": "Track RemoveBG PicGo version updates and new features",
     "back": "Back to Home",
     "types": {
       "major": "Major Update",

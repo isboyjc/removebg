@@ -6,7 +6,7 @@
     "toggle": "切换主题"
   },
   "metadata": {
-    "title": "Remove BG - AI 智能抠图 | RMBG-1.4",
+    "title": "RemoveBG PicGo - AI 智能抠图 | RMBG-1.4",
     "description": "免费在线 AI 抠图工具。使用先进的 RMBG-1.4 模型即时去除图片背景。完全在浏览器本地运行，保护隐私安全。无需注册。"
   },
   "nav": {
@@ -175,7 +175,7 @@
   "capabilities": {
     "badge": "强大功能",
     "title": "为什么选择",
-    "highlight": "Remove BG",
+    "highlight": "RemoveBG PicGo",
     "description": "专业的 AI 背景去除工具，完全免费且注重隐私保护。",
     "items": {
       "aiPowered": {
@@ -243,7 +243,7 @@
     "badge": "常见问题",
     "title": "常见",
     "highlight": "问题",
-    "description": "关于 Remove BG 的常见问题解答。",
+    "description": "关于 RemoveBG PicGo 的常见问题解答。",
     "moreQuestions": "还有其他问题？欢迎在 GitHub Issues 提问",
     "items": {
       "howItWorks": {
@@ -284,12 +284,12 @@
     "beforeAfter": "前后对比",
     "original": "原图",
     "comparison": "效果对比",
-    "footerHint": "以上案例均由 Remove BG 在浏览器中实时处理生成"
+    "footerHint": "以上案例均由 RemoveBG PicGo 在浏览器中实时处理生成"
   },
   "changelog": {
     "title": "更新",
     "highlight": "日志",
-    "description": "了解 Remove BG 的版本迭代和功能更新",
+    "description": "了解 RemoveBG PicGo 的版本迭代和功能更新",
     "back": "返回首页",
     "types": {
       "major": "重大更新",

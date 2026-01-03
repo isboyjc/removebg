@@ -6,7 +6,7 @@
     "toggle": "테마 전환"
   },
   "metadata": {
-    "title": "Remove BG - AI 배경 제거 도구 | RMBG-1.4",
+    "title": "RemoveBG PicGo - AI 배경 제거 도구 | RMBG-1.4",
     "description": "무료 온라인 AI 배경 제거 도구. 고급 RMBG-1.4 모델을 사용하여 이미지 배경을 즉시 제거합니다. 개인정보 보호를 위해 완전히 브라우저에서 실행됩니다. 등록 불필요."
   },
   "nav": {
@@ -175,7 +175,7 @@
   "capabilities": {
     "badge": "강력한 기능",
     "title": "왜 선택하나요",
-    "highlight": "Remove BG",
+    "highlight": "RemoveBG PicGo",
     "description": "AI 기술을 갖춘 전문 배경 제거 도구. 완전 무료이며 개인정보 보호에 중점을 둡니다.",
     "items": {
       "aiPowered": {
@@ -243,7 +243,7 @@
     "badge": "FAQ",
     "title": "자주 묻는",
     "highlight": "질문",
-    "description": "Remove BG에 대한 자주 묻는 질문에 대한 답변.",
+    "description": "RemoveBG PicGo에 대한 자주 묻는 질문에 대한 답변.",
     "moreQuestions": "더 궁금한 점이 있으신가요?",
     "items": {
       "howItWorks": {
@@ -284,12 +284,12 @@
     "beforeAfter": "전후",
     "original": "원본",
     "comparison": "비교",
-    "footerHint": "위의 모든 예제는 브라우저에서 Remove BG에 의해 실시간으로 처리되었습니다"
+    "footerHint": "위의 모든 예제는 브라우저에서 RemoveBG PicGo에 의해 실시간으로 처리되었습니다"
   },
   "changelog": {
     "title": "변경",
     "highlight": "로그",
-    "description": "Remove BG 버전 업데이트 및 새로운 기능 추적",
+    "description": "RemoveBG PicGo 버전 업데이트 및 새로운 기능 추적",
     "back": "홈으로 돌아가기",
     "types": {
       "major": "주요 업데이트",

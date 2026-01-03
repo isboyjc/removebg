@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/icon.svg" alt="Remove BG Logo" width="120" />
+<img src="public/icon.svg" alt="RemoveBG PicGo Logo" width="120" />
 
-# Remove BG
+# RemoveBG PicGo
 
 **AI 驱动的智能抠图工具 | AI-Powered Background Remover**
 
@@ -27,7 +27,7 @@
 
 ### ✨ 简介
 
-**Remove BG** 是一款基于 AI 技术的在线智能抠图工具。使用先进的 [RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) 和 [U2Net](https://github.com/xuebinqin/U-2-Net) 深度学习模型，可以精准识别图片主体并智能去除背景。
+**RemoveBG PicGo** 是一款基于 AI 技术的在线智能抠图工具。使用先进的 [RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) 和 [U2Net](https://github.com/xuebinqin/U-2-Net) 深度学习模型，可以精准识别图片主体并智能去除背景。
 
 🌟 **核心亮点：所有处理完全在浏览器本地进行，图片不会上传到任何服务器，充分保护您的隐私！**
 
@@ -106,7 +106,7 @@ pnpm start
 
 ### 🌍 国际化
 
-Remove BG 支持以下语言：
+RemoveBG PicGo 支持以下语言：
 
 - 🇨🇳 简体中文
 - 🇺🇸 English
@@ -131,7 +131,7 @@ Remove BG 支持以下语言：
 
 ### ✨ Introduction
 
-**Remove BG** is an AI-powered online background removal tool. Using advanced [RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) and [U2Net](https://github.com/xuebinqin/U-2-Net) deep learning models, it can accurately identify subjects and intelligently remove backgrounds.
+**RemoveBG PicGo** is an AI-powered online background removal tool. Using advanced [RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) and [U2Net](https://github.com/xuebinqin/U-2-Net) deep learning models, it can accurately identify subjects and intelligently remove backgrounds.
 
 🌟 **Key Highlight: All processing is done entirely in your browser locally. Images are never uploaded to any server, fully protecting your privacy!**
 
@@ -210,7 +210,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ### 🌍 Internationalization
 
-Remove BG supports the following languages:
+RemoveBG PicGo supports the following languages:
 
 - 🇨🇳 Simplified Chinese
 - 🇺🇸 English

@@ -64,8 +64,8 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
   }
 
   return {
-    name: "Remove BG",
-    short_name: "Remove BG",
+    name: "RemoveBG PicGo",
+    short_name: "RemoveBG PicGo",
     description: descriptionsByLocale[detectedLocale],
     start_url: "/",
     id: "/",

@@ -36,7 +36,7 @@ export function Navbar() {
             href="/"
             onClick={handleLogoClick}
             className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105 active:scale-95"
-            aria-label="Remove BG - Back to home"
+            aria-label="RemoveBG PicGo - Back to home"
           >
             <Logo size={44} />
             <ProductName size="md" className="hidden sm:inline-flex" />

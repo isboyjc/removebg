@@ -22,11 +22,11 @@ const localeToOGLocale: Record<Locale, string> = {
 
 // 各语言的更新日志标题
 const changelogTitles: Record<Locale, string> = {
-  zh: "更新日志 - Remove BG",
-  en: "Changelog - Remove BG",
-  ja: "変更履歴 - Remove BG",
-  ko: "변경 로그 - Remove BG",
-  ru: "История изменений - Remove BG",
+  zh: "更新日志 - RemoveBG PicGo",
+  en: "Changelog - RemoveBG PicGo",
+  ja: "変更履歴 - RemoveBG PicGo",
+  ko: "변경 로그 - RemoveBG PicGo",
+  ru: "История изменений - RemoveBG PicGo",
 }
 
 export async function generateMetadata({
@@ -60,7 +60,7 @@ export async function generateMetadata({
       type: "website",
       locale: localeToOGLocale[currentLocale],
       url: pageUrl,
-      siteName: "Remove BG",
+      siteName: "RemoveBG PicGo",
       title: changelogTitles[currentLocale],
       description: t.description || meta.description,
     },
