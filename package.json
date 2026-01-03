@@ -1,7 +1,7 @@
 {
   "name": "removebg",
   "version": "1.0.0",
-  "description": "AI-powered background remover - Clean PicGo",
+  "description": "AI-powered background remover - RemoveBG PicGo",
   "private": true,
   "author": {
     "name": "isboyjc",

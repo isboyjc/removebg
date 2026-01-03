@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl"
 import { getMessages, setRequestLocale } from "next-intl/server"
 import { Space_Grotesk } from "next/font/google"
 import { notFound } from "next/navigation"
+import Script from "next/script"
 import { locales, type Locale } from "@/i18n/config"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister"
@@ -13,6 +14,9 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 })
+
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+const CF_BEACON_TOKEN = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -235,6 +239,13 @@ export async function generateMetadata({
       site: "@isboyjc",
       creator: "@isboyjc",
     },
+    verification: {
+      google: "_CvOg3BEbVhWAo6RtzmbLyEAkUD18obxJRXoe_JO1YU",
+      yandex: "0f6a0c5ee55e27c6",
+      other: {
+        "msvalidate.01": "245A3684B14E9358CC55A271164D378E",
+      },
+    },
     category: "technology",
   }
 }
@@ -385,6 +396,33 @@ export default async function LocaleLayout({
             {children}
           </NextIntlClientProvider>
         </ThemeProvider>
+
+        {/* Google Analytics */}
+        {GA_MEASUREMENT_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
+
+        {/* Cloudflare Web Analytics */}
+        {CF_BEACON_TOKEN && (
+          <Script
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={`{"token": "${CF_BEACON_TOKEN}"}`}
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   )
