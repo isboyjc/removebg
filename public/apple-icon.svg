@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <!-- Apple Touch Icon - Neo-Brutalism 去除背景 Logo -->
+
+  <!-- 背景 -->
+  <rect width="180" height="180" fill="#FFFBEB" rx="20"/>
+
+  <!-- 阴影 -->
+  <rect x="35" y="35" width="110" height="110" rx="12" fill="#000000" transform="translate(6, 6)" opacity="0.9"/>
+
+  <!-- 主图像框 -->
+  <rect x="35" y="35" width="110" height="110" rx="12" fill="#FFFBEB" stroke="#000000" stroke-width="5"/>
+
+  <!-- 左侧实色区域 - 珊瑚红 -->
+  <path d="M35 47 Q35 35 47 35 L90 35 L90 145 L47 145 Q35 145 35 133 Z" fill="#FF6B6B" stroke="#000000" stroke-width="5"/>
+
+  <!-- 右侧透明格子效果 -->
+  <clipPath id="rightClipApple">
+    <path d="M90 35 L133 35 Q145 35 145 47 L145 133 Q145 145 133 145 L90 145 Z"/>
+  </clipPath>
+
+  <g clip-path="url(#rightClipApple)">
+    <!-- 棋盘格背景 - 表示透明 -->
+    <rect x="90" y="35" width="22" height="22" fill="#E5E5E5"/>
+    <rect x="112" y="35" width="33" height="22" fill="#FFFFFF"/>
+    <rect x="90" y="57" width="22" height="22" fill="#FFFFFF"/>
+    <rect x="112" y="57" width="33" height="22" fill="#E5E5E5"/>
+    <rect x="90" y="79" width="22" height="22" fill="#E5E5E5"/>
+    <rect x="112" y="79" width="33" height="22" fill="#FFFFFF"/>
+    <rect x="90" y="101" width="22" height="22" fill="#FFFFFF"/>
+    <rect x="112" y="101" width="33" height="22" fill="#E5E5E5"/>
+    <rect x="90" y="123" width="22" height="22" fill="#E5E5E5"/>
+    <rect x="112" y="123" width="33" height="22" fill="#FFFFFF"/>
+  </g>
+
+  <!-- 右侧边框 -->
+  <path d="M90 35 L133 35 Q145 35 145 47 L145 133 Q145 145 133 145 L90 145" fill="none" stroke="#000000" stroke-width="5"/>
+
+  <!-- 分割线 - 薄荷绿 -->
+  <line x1="90" y1="35" x2="90" y2="145" stroke="#7FFFD4" stroke-width="8"/>
+  <line x1="90" y1="35" x2="90" y2="145" stroke="#000000" stroke-width="2"/>
+
+  <!-- 高光 -->
+  <rect x="42" y="42" width="40" height="16" rx="4" fill="#FFFFFF" opacity="0.4"/>
+</svg>

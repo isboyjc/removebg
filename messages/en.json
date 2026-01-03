@@ -1,0 +1,316 @@
+{
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Toggle theme"
+  },
+  "metadata": {
+    "title": "Remove BG - AI Background Remover | RMBG-1.4",
+    "description": "Free online AI background remover. Remove image backgrounds instantly using advanced RMBG-1.4 model. Runs entirely in browser for privacy. No registration required."
+  },
+  "nav": {
+    "title": "Remove Background"
+  },
+  "hero": {
+    "badge": "AI Powered · Free to Use",
+    "title": {
+      "line1": "Remove Image",
+      "line2": "",
+      "highlight": "Background"
+    },
+    "description": "Remove backgrounds from images instantly using advanced AI technology.",
+    "descriptionSub": "No registration required. Processed entirely in your browser to protect your privacy.",
+    "cleanup": {
+      "text": "Remove Watermark"
+    },
+    "models": {
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "recommended": "Recommended",
+      "ready": "Ready",
+      "notReady": "Not Ready"
+    },
+    "upload": {
+      "dragging": "Drop to upload",
+      "default": "Drag & drop images here",
+      "or": "or",
+      "click": "click to select files",
+      "formats": "Supports JPG, PNG, WebP",
+      "batch": "Batch"
+    },
+    "tags": {
+      "batch": "📦 Batch Processing",
+      "fast": "🚀 Fast Processing",
+      "local": "🔒 Local Processing",
+      "free": "💯 Completely Free",
+      "quality": "✨ High Quality"
+    },
+    "modelStatus": {
+      "ready": "Model Ready",
+      "notReady": "Model download required"
+    }
+  },
+  "editor": {
+    "title": "Image Editor",
+    "toolbar": {
+      "close": "Close editor",
+      "download": "Download PNG",
+      "downloadAria": "Download transparent PNG"
+    },
+    "toolPanel": {
+      "tools": "Editor tools",
+      "undo": "Undo",
+      "redo": "Redo",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "zoomReset": "Reset zoom",
+      "fitToScreen": "Fit to screen",
+      "compare": "Compare before/after",
+      "exitCompare": "Exit Compare",
+      "exitComparison": "Exit comparison",
+      "historyControls": "History controls",
+      "zoomControls": "Zoom controls",
+      "resetZoomAria": "Reset zoom: {percentage}%",
+      "backgroundColor": "Background color",
+      "download": "Download PNG",
+      "downloadAria": "Download transparent PNG",
+      "switchModel": "Switch model",
+      "selectModel": "Select Model"
+    },
+    "modelSwitcher": {
+      "title": "Switch Model",
+      "ready": "Ready",
+      "notReady": "Not Ready",
+      "downloading": "Downloading...",
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "u2netDesc": "Better for general use (Recommended)",
+      "rmbgDesc": "May work better in specific scenarios"
+    },
+    "modelLabel": {
+      "generatedWith": "Generated with {model}"
+    },
+    "compare": {
+      "original": "Original",
+      "noBackground": "No Background"
+    },
+    "modelLoading": {
+      "loading": "Loading",
+      "downloading": "Downloading",
+      "model": "Model",
+      "loadingFromCache": "Loading {modelName} from cache",
+      "downloadingFirstTime": "Downloading {modelName} model for the first time",
+      "cachedInfo": "The model will be cached in your browser for future use"
+    },
+    "backgroundColorPicker": {
+      "title": "Background Color",
+      "customColor": "Custom Color",
+      "apply": "Apply",
+      "invalidHex": "Please enter a valid hex color code",
+      "colors": {
+        "transparent": "Transparent",
+        "white": "White",
+        "black": "Black",
+        "lightGray": "Light Gray",
+        "gray": "Gray",
+        "darkGray": "Dark Gray",
+        "red": "Red",
+        "pink": "Pink",
+        "orange": "Orange",
+        "gold": "Gold",
+        "yellow": "Yellow",
+        "lightGreen": "Light Green",
+        "green": "Green",
+        "darkGreen": "Dark Green",
+        "cyan": "Cyan",
+        "skyBlue": "Sky Blue",
+        "blue": "Blue",
+        "darkBlue": "Dark Blue",
+        "purple": "Purple",
+        "magenta": "Magenta",
+        "brown": "Brown",
+        "beige": "Beige",
+        "olive": "Olive",
+        "navy": "Navy"
+      }
+    },
+    "batch": {
+      "downloadAll": "Download All"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "model": {
+      "label": "Model",
+      "select": "Select model",
+      "rmbg": "RMBG-1.4",
+      "description": "Choose the background removal model",
+      "u2netDesc": "Better for general use (Recommended)",
+      "rmbgDesc": "May work better in specific scenarios",
+      "noteTitle": "Note:",
+      "noteDescription": "Model selection affects background removal quality and processing speed. U2Net is recommended for best removal quality."
+    }
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "toggleTheme": "Toggle theme",
+    "switchLanguage": "Switch language",
+    "uploadImage": "Upload image",
+    "selectFile": "Select file to upload"
+  },
+  "footer": {
+    "builtWith": "Built with",
+    "and": "and AI",
+    "copyright": "Powered by RMBG and U2Net models, running on ONNX Runtime Web in browser.",
+    "changelog": "Changelog",
+    "friendLinks": "Resources"
+  },
+  "capabilities": {
+    "badge": "Powerful Features",
+    "title": "Why Choose",
+    "highlight": "Remove BG",
+    "description": "Professional background removal tool with AI technology, completely free and privacy-focused.",
+    "items": {
+      "aiPowered": {
+        "title": "AI Powered",
+        "description": "Advanced deep learning models for precise edge detection and background removal."
+      },
+      "batch": {
+        "title": "Batch Processing",
+        "description": "Process multiple images at once. Upload as many as you need and download them all in a ZIP."
+      },
+      "privacy": {
+        "title": "Privacy First",
+        "description": "All processing happens locally in your browser. Your images never leave your device."
+      },
+      "free": {
+        "title": "Completely Free",
+        "description": "No registration, no watermarks, no limits. Use it as much as you want."
+      },
+      "fast": {
+        "title": "Lightning Fast",
+        "description": "Process images in seconds with optimized AI models and WebAssembly acceleration."
+      },
+      "dualModel": {
+        "title": "Dual AI Models",
+        "description": "U2Net for general use, RMBG for specific scenarios. Switch as needed."
+      },
+      "formats": {
+        "title": "Multiple Formats",
+        "description": "Support for JPG, PNG, WebP input. Export as transparent PNG."
+      },
+      "pwa": {
+        "title": "Works Offline",
+        "description": "Install as an app and use it anywhere, even without internet connection."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It",
+    "highlight": "Works",
+    "description": "Remove image backgrounds in just a few simple steps.",
+    "steps": {
+      "upload": {
+        "title": "Upload Image",
+        "description": "Drag and drop or click to select your image file."
+      },
+      "selectModel": {
+        "title": "Choose Model",
+        "description": "U2Net recommended, try RMBG for specific cases."
+      },
+      "process": {
+        "title": "AI Processing",
+        "description": "Our AI automatically detects and removes the background."
+      },
+      "preview": {
+        "title": "Preview Result",
+        "description": "Compare before and after with interactive preview."
+      },
+      "download": {
+        "title": "Download",
+        "description": "Save your transparent PNG image with one click."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked",
+    "highlight": "Questions",
+    "description": "Find answers to common questions about Remove BG.",
+    "moreQuestions": "Have more questions? Open an issue on",
+    "items": {
+      "howItWorks": {
+        "question": "How does the background removal work?",
+        "answer": "We use advanced AI models (**U2Net** and **RMBG-1.4**) that run entirely in your browser using WebAssembly and ONNX Runtime. The AI analyzes your image, detects the foreground subject, and removes the background automatically."
+      },
+      "models": {
+        "question": "What's the difference between U2Net and RMBG?",
+        "answer": "**U2Net** works better for general use cases and is suitable for most images - we recommend using it first. **RMBG-1.4** may perform better in certain specific scenarios and can be tried as an alternative."
+      },
+      "privacy": {
+        "question": "Is my data safe?",
+        "answer": "**Absolutely!** All image processing happens locally in your browser. Your images are never uploaded to any server. The AI models are downloaded once and cached in your browser for future use."
+      },
+      "formats": {
+        "question": "What image formats are supported?",
+        "answer": "You can upload images in **JPG**, **PNG**, and **WebP** formats. The output is always a **transparent PNG** file that you can use anywhere."
+      },
+      "speed": {
+        "question": "How long does processing take?",
+        "answer": "Processing time depends on image size and your device. Typically, it takes **2-10 seconds** for most images. The first use may take longer as the AI model needs to be downloaded and cached."
+      },
+      "quality": {
+        "question": "How can I get the best results?",
+        "answer": "For best results: **1)** Use high-quality images with clear subjects. **2)** Choose U2Net model for complex backgrounds. **3)** Ensure good contrast between subject and background. **4)** Avoid heavily compressed images."
+      }
+    }
+  },
+  "examples": {
+    "badge": "See It in Action",
+    "title": "Real",
+    "highlight": "Examples",
+    "description": "Hover to see the background removal animation and witness the powerful AI processing",
+    "hoverHint": "Hover to preview",
+    "playing": "Playing",
+    "example": "Example",
+    "showingResult": "Showing result",
+    "beforeAfter": "Before/After",
+    "original": "Original",
+    "comparison": "Comparison",
+    "footerHint": "All examples above were processed in real-time by Remove BG in the browser"
+  },
+  "changelog": {
+    "title": "Change",
+    "highlight": "Log",
+    "description": "Track Remove BG version updates and new features",
+    "back": "Back to Home",
+    "types": {
+      "major": "Major Update",
+      "minor": "Feature Update",
+      "patch": "Bug Fix"
+    },
+    "moreUpdates": "View more updates on",
+    "versions": {
+      "v1_0_0": {
+        "changes": [
+          { "type": "feature", "text": "AI-powered background removal using U2Net and RMBG-1.4 models" },
+          { "type": "feature", "text": "Runs entirely in browser for privacy protection" },
+          { "type": "feature", "text": "Batch image processing - upload multiple images at once" },
+          { "type": "feature", "text": "Batch download as ZIP archive" },
+          { "type": "feature", "text": "Support JPG, PNG, WebP input formats" },
+          { "type": "feature", "text": "Export high-quality transparent PNG images" },
+          { "type": "feature", "text": "Real-time before/after comparison preview" },
+          { "type": "feature", "text": "Customizable background colors with 24 preset options" },
+          { "type": "feature", "text": "Dual model switching: U2Net recommended for general use, RMBG for specific scenarios" },
+          { "type": "feature", "text": "Local model caching - no re-download needed" },
+          { "type": "feature", "text": "PWA support - install as local app for offline use" },
+          { "type": "feature", "text": "Neo-Brutalism design with light/dark theme support" },
+          { "type": "feature", "text": "Bilingual support (English and Chinese)" }
+        ]
+      }
+    }
+  }
+}

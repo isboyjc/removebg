@@ -1,0 +1,316 @@
+{
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统",
+    "toggle": "切换主题"
+  },
+  "metadata": {
+    "title": "Remove BG - AI 智能抠图 | RMBG-1.4",
+    "description": "免费在线 AI 抠图工具。使用先进的 RMBG-1.4 模型即时去除图片背景。完全在浏览器本地运行，保护隐私安全。无需注册。"
+  },
+  "nav": {
+    "title": "智能抠图"
+  },
+  "hero": {
+    "badge": "AI 驱动 · 免费使用",
+    "title": {
+      "line1": "一键去除",
+      "line2": "图片",
+      "highlight": "背景"
+    },
+    "description": "使用先进的 AI 技术，即时去除图片背景。",
+    "descriptionSub": "无需注册，完全在浏览器中处理，保护您的隐私。",
+    "cleanup": {
+      "text": "去水印"
+    },
+    "models": {
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "recommended": "推荐",
+      "ready": "已就绪",
+      "notReady": "未就绪"
+    },
+    "upload": {
+      "dragging": "释放以上传图片",
+      "default": "拖拽图片到这里",
+      "or": "或者",
+      "click": "点击选择文件",
+      "formats": "支持 JPG、PNG、WebP 格式",
+      "batch": "批量"
+    },
+    "tags": {
+      "batch": "📦 批量处理",
+      "fast": "🚀 秒级处理",
+      "local": "🔒 本地运行",
+      "free": "💯 完全免费",
+      "quality": "✨ 高质量输出"
+    },
+    "modelStatus": {
+      "ready": "模型已就绪",
+      "notReady": "首次使用需下载模型"
+    }
+  },
+  "editor": {
+    "title": "图片编辑器",
+    "toolbar": {
+      "close": "关闭编辑器",
+      "download": "下载 PNG",
+      "downloadAria": "下载透明背景 PNG"
+    },
+    "toolPanel": {
+      "tools": "编辑工具",
+      "undo": "撤回",
+      "redo": "取消撤回",
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "zoomReset": "重置缩放",
+      "fitToScreen": "适应屏幕",
+      "compare": "对比前后效果",
+      "exitCompare": "退出对比",
+      "exitComparison": "退出对比",
+      "historyControls": "历史记录控制",
+      "zoomControls": "缩放控制",
+      "resetZoomAria": "重置缩放：{percentage}%",
+      "backgroundColor": "背景颜色",
+      "download": "下载 PNG",
+      "downloadAria": "下载透明背景 PNG",
+      "switchModel": "切换模型",
+      "selectModel": "选择模型"
+    },
+    "modelSwitcher": {
+      "title": "切换模型",
+      "ready": "已就绪",
+      "notReady": "未就绪",
+      "downloading": "下载中...",
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "u2netDesc": "通用场景效果更好（推荐）",
+      "rmbgDesc": "特定场景可能效果更佳"
+    },
+    "modelLabel": {
+      "generatedWith": "使用 {model} 生成"
+    },
+    "compare": {
+      "original": "原图",
+      "noBackground": "无背景"
+    },
+    "modelLoading": {
+      "loading": "加载中",
+      "downloading": "下载中",
+      "model": "模型",
+      "loadingFromCache": "正在从缓存加载 {modelName}",
+      "downloadingFirstTime": "首次下载 {modelName} 模型",
+      "cachedInfo": "模型将缓存在浏览器中供将来使用"
+    },
+    "backgroundColorPicker": {
+      "title": "背景颜色",
+      "customColor": "自定义颜色",
+      "apply": "应用",
+      "invalidHex": "请输入有效的16进制颜色代码",
+      "colors": {
+        "transparent": "透明",
+        "white": "白色",
+        "black": "黑色",
+        "lightGray": "浅灰",
+        "gray": "灰色",
+        "darkGray": "深灰",
+        "red": "红色",
+        "pink": "粉色",
+        "orange": "橙色",
+        "gold": "金色",
+        "yellow": "黄色",
+        "lightGreen": "浅绿",
+        "green": "绿色",
+        "darkGreen": "深绿",
+        "cyan": "青色",
+        "skyBlue": "天蓝",
+        "blue": "蓝色",
+        "darkBlue": "深蓝",
+        "purple": "紫色",
+        "magenta": "紫红",
+        "brown": "棕色",
+        "beige": "米色",
+        "olive": "橄榄",
+        "navy": "海军蓝"
+      }
+    },
+    "batch": {
+      "downloadAll": "全部下载"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "model": {
+      "label": "模型",
+      "select": "选择模型",
+      "rmbg": "RMBG-1.4",
+      "description": "选择背景去除模型",
+      "u2netDesc": "通用场景效果更好（推荐）",
+      "rmbgDesc": "特定场景可能效果更佳",
+      "noteTitle": "提示：",
+      "noteDescription": "模型选择将影响背景去除质量和处理速度。推荐使用 U2Net 以获得最佳去除效果。"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "跳转到主要内容",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "toggleTheme": "切换主题",
+    "switchLanguage": "切换语言",
+    "uploadImage": "上传图片",
+    "selectFile": "选择要上传的文件"
+  },
+  "footer": {
+    "builtWith": "使用",
+    "and": "和 AI 构建",
+    "copyright": "基于 RMBG 和 U2Net 模型，使用 ONNX Runtime Web 在浏览器中运行。",
+    "changelog": "更新日志",
+    "friendLinks": "相关资源"
+  },
+  "capabilities": {
+    "badge": "强大功能",
+    "title": "为什么选择",
+    "highlight": "Remove BG",
+    "description": "专业的 AI 背景去除工具，完全免费且注重隐私保护。",
+    "items": {
+      "aiPowered": {
+        "title": "AI 驱动",
+        "description": "先进的深度学习模型，精准检测边缘并去除背景。"
+      },
+      "batch": {
+        "title": "批量处理",
+        "description": "一次上传多张图片，批量处理后打包下载为 ZIP 文件。"
+      },
+      "privacy": {
+        "title": "隐私优先",
+        "description": "所有处理都在浏览器本地完成，图片永不上传服务器。"
+      },
+      "free": {
+        "title": "完全免费",
+        "description": "无需注册、无水印、无限制，随意使用。"
+      },
+      "fast": {
+        "title": "极速处理",
+        "description": "优化的 AI 模型配合 WebAssembly 加速，秒级完成处理。"
+      },
+      "dualModel": {
+        "title": "双模型选择",
+        "description": "U2Net 通用效果更好，RMBG 特定场景可选，按需切换。"
+      },
+      "formats": {
+        "title": "多格式支持",
+        "description": "支持 JPG、PNG、WebP 输入，导出透明 PNG。"
+      },
+      "pwa": {
+        "title": "离线可用",
+        "description": "安装为应用后可离线使用，随时随地处理图片。"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "使用",
+    "highlight": "方法",
+    "description": "只需几个简单步骤，即可去除图片背景。",
+    "steps": {
+      "upload": {
+        "title": "上传图片",
+        "description": "拖拽或点击选择需要处理的图片。"
+      },
+      "selectModel": {
+        "title": "选择模型",
+        "description": "推荐 U2Net，特定场景可尝试 RMBG。"
+      },
+      "process": {
+        "title": "AI 处理",
+        "description": "AI 自动检测并去除图片背景。"
+      },
+      "preview": {
+        "title": "预览效果",
+        "description": "交互式对比处理前后效果。"
+      },
+      "download": {
+        "title": "下载图片",
+        "description": "一键保存透明背景 PNG 图片。"
+      }
+    }
+  },
+  "faq": {
+    "badge": "常见问题",
+    "title": "常见",
+    "highlight": "问题",
+    "description": "关于 Remove BG 的常见问题解答。",
+    "moreQuestions": "还有其他问题？欢迎在 GitHub Issues 提问",
+    "items": {
+      "howItWorks": {
+        "question": "背景去除是如何工作的？",
+        "answer": "我们使用先进的 AI 模型（**U2Net** 和 **RMBG-1.4**），完全在浏览器中通过 WebAssembly 和 ONNX Runtime 运行。AI 会分析图片，检测前景主体，并自动去除背景。"
+      },
+      "models": {
+        "question": "U2Net 和 RMBG 有什么区别？",
+        "answer": "**U2Net** 在通用场景下处理效果更好，适合大多数图片，推荐优先使用。**RMBG-1.4** 在某些特定场景下可能效果更佳，可以作为备选方案尝试。"
+      },
+      "privacy": {
+        "question": "我的数据安全吗？",
+        "answer": "**绝对安全！** 所有图片处理都在浏览器本地完成，图片永远不会上传到任何服务器。AI 模型下载一次后会缓存在浏览器中供后续使用。"
+      },
+      "formats": {
+        "question": "支持哪些图片格式？",
+        "answer": "支持上传 **JPG**、**PNG** 和 **WebP** 格式的图片。输出始终为 **透明 PNG** 格式，可以在任何地方使用。"
+      },
+      "speed": {
+        "question": "处理需要多长时间？",
+        "answer": "处理时间取决于图片大小和设备性能。通常大多数图片只需 **2-10 秒**。首次使用可能需要更长时间，因为需要下载并缓存 AI 模型。"
+      },
+      "quality": {
+        "question": "如何获得最佳效果？",
+        "answer": "要获得最佳效果：**1)** 使用主体清晰的高质量图片。**2)** 复杂背景选择 U2Net 模型。**3)** 确保主体与背景有良好的对比度。**4)** 避免使用过度压缩的图片。"
+      }
+    }
+  },
+  "examples": {
+    "badge": "效果展示",
+    "title": "真实",
+    "highlight": "案例",
+    "description": "悬停查看抠图效果动画，亲眼见证 AI 的强大抠图能力",
+    "hoverHint": "悬停预览效果",
+    "playing": "播放中",
+    "example": "案例",
+    "showingResult": "展示效果",
+    "beforeAfter": "前后对比",
+    "original": "原图",
+    "comparison": "效果对比",
+    "footerHint": "以上案例均由 Remove BG 在浏览器中实时处理生成"
+  },
+  "changelog": {
+    "title": "更新",
+    "highlight": "日志",
+    "description": "了解 Remove BG 的版本迭代和功能更新",
+    "back": "返回首页",
+    "types": {
+      "major": "重大更新",
+      "minor": "功能更新",
+      "patch": "问题修复"
+    },
+    "moreUpdates": "查看更多更新记录：",
+    "versions": {
+      "v1_0_0": {
+        "changes": [
+          { "type": "feature", "text": "基于 U2Net 和 RMBG-1.4 模型的 AI 智能抠图" },
+          { "type": "feature", "text": "完全在浏览器本地运行，保护用户隐私" },
+          { "type": "feature", "text": "支持批量图片处理，一次上传多张图片" },
+          { "type": "feature", "text": "批量下载为 ZIP 压缩包" },
+          { "type": "feature", "text": "支持 JPG、PNG、WebP 格式输入" },
+          { "type": "feature", "text": "导出高质量透明 PNG 图片" },
+          { "type": "feature", "text": "实时预览对比处理前后效果" },
+          { "type": "feature", "text": "自定义背景颜色，24 种预设颜色可选" },
+          { "type": "feature", "text": "双模型切换：U2Net 通用推荐，RMBG 特定场景备选" },
+          { "type": "feature", "text": "模型文件本地缓存，无需重复下载" },
+          { "type": "feature", "text": "PWA 支持，可安装为本地应用离线使用" },
+          { "type": "feature", "text": "Neo-Brutalism 设计风格，支持明暗主题切换" },
+          { "type": "feature", "text": "中英文双语支持" }
+        ]
+      }
+    }
+  }
+}

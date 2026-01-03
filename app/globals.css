@@ -1,0 +1,263 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Space Grotesk Font */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-canvas-bg: var(--canvas-bg);
+  --color-canvas-dot: var(--canvas-dot);
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Neo-Brutalism 特有变量 */
+  --shadow-brutal: 4px 4px 0 var(--foreground);
+  --shadow-brutal-sm: 2px 2px 0 var(--foreground);
+  --shadow-brutal-lg: 6px 6px 0 var(--foreground);
+  --shadow-brutal-xl: 8px 8px 0 var(--foreground);
+}
+
+:root {
+  /* Neo-Brutalism 野兽派主题色 */
+  --radius: 0.5rem;
+
+  /* 奶油白背景 */
+  --background: #fffbeb;
+  --foreground: #000000;
+
+  /* 画布背景（编辑器专用） */
+  --canvas-bg: #fffbeb;
+  --canvas-dot: #cdcdc4;
+
+  /* 卡片 */
+  --card: #FFFBEB;
+  --card-foreground: #000000;
+
+  /* 弹出层 */
+  --popover: #FFFBEB;
+  --popover-foreground: #000000;
+
+  /* 主色 - 柠檬黄 */
+  --primary: #FFE500;
+  --primary-foreground: #000000;
+
+  /* 次要色 - 珊瑚红 */
+  --secondary: #FF6B6B;
+  --secondary-foreground: #000000;
+
+  /* 强调色 - 薄荷绿 */
+  --accent: #7FFFD4;
+  --accent-foreground: #000000;
+
+  /* 柔和色 */
+  --muted: #F5F5DC;
+  --muted-foreground: #525252;
+
+  /* 危险色 */
+  --destructive: #FF4444;
+
+  /* 边框 - 纯黑 */
+  --border: #000000;
+  --input: #000000;
+  --ring: #FFE500;
+}
+
+.dark {
+  /* 深色模式 */
+  --background: #1A1A1A;
+  --foreground: #FFFFFF;
+
+  /* 画布背景（编辑器专用） */
+  --canvas-bg: #141414;
+  --canvas-dot: rgba(255, 255, 255, 0.1);
+
+  --card: #262626;
+  --card-foreground: #FFFFFF;
+
+  --popover: #262626;
+  --popover-foreground: #FFFFFF;
+
+  /* 主题色保持鲜艳 */
+  --primary: #FFE500;
+  --primary-foreground: #000000;
+
+  --secondary: #FF6B6B;
+  --secondary-foreground: #000000;
+
+  --accent: #7FFFD4;
+  --accent-foreground: #000000;
+
+  --muted: #404040;
+  --muted-foreground: #A3A3A3;
+
+  --destructive: #FF6B6B;
+
+  --border: #FFFFFF;
+  --input: #FFFFFF;
+  --ring: #FFE500;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+}
+
+/* 自定义鼠标样式 - Neo-Brutalism 风格 */
+:root {
+  --cursor-default: url('/cursor-light.svg') 4 4, auto;
+  --cursor-pointer: url('/cursor-light.svg') 4 4, pointer;
+}
+
+.dark {
+  --cursor-default: url('/cursor-dark.svg') 4 4, auto;
+  --cursor-pointer: url('/cursor-dark.svg') 4 4, pointer;
+}
+
+/* 全局应用自定义鼠标 */
+*,
+*::before,
+*::after {
+  cursor: var(--cursor-default) !important;
+}
+
+/* 可点击元素使用 pointer 样式 */
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"],
+label[for],
+select,
+.cursor-pointer,
+[onclick],
+[tabindex]:not([tabindex="-1"]) {
+  cursor: var(--cursor-pointer) !important;
+}
+
+/* 输入框使用文本光标 */
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+[contenteditable="true"] {
+  cursor: text !important;
+}
+
+/* 特殊情况 */
+.cursor-none,
+.cursor-none * {
+  cursor: none !important;
+}
+
+.\!cursor-grab,
+.\!cursor-grab * {
+  cursor: grab !important;
+}
+
+.\!cursor-grabbing,
+.\!cursor-grabbing * {
+  cursor: grabbing !important;
+}
+
+/* Neo-Brutalism 工具类 */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brutal-border-2 {
+    border: 2px solid var(--foreground);
+  }
+
+  .brutal-shadow {
+    box-shadow: var(--shadow-brutal);
+  }
+
+  .brutal-shadow-sm {
+    box-shadow: var(--shadow-brutal-sm);
+  }
+
+  .brutal-hover {
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  }
+
+  .brutal-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-brutal-lg);
+  }
+
+  .brutal-hover:active {
+    transform: translate(0, 0);
+    box-shadow: var(--shadow-brutal-sm);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
