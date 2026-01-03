@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Upload, ImageIcon, Sparkles, Images } from "lucide-react"
+import { Upload, ImageIcon, Sparkles, Images, Loader2 } from "lucide-react"
 import { useTranslations } from "next-intl"
 import { CleanupLogo } from "./CleanupLogo"
 import { getSelectedModel, setSelectedModel } from "@/lib/model-storage"
@@ -13,11 +13,32 @@ interface HeroProps {
   onImagesSelect: (files: File[], modelType: ModelType) => void
 }
 
+// 快速示例图片数据
+const quickExamples = [
+  {
+    url: "https://cdn.isboyjc.com/picgo/removebg/a0.jpg",
+    model: "u2net" as ModelType,
+  },
+  {
+    url: "https://cdn.isboyjc.com/picgo/removebg/b0.jpg",
+    model: "u2net" as ModelType,
+  },
+  {
+    url: "https://cdn.isboyjc.com/picgo/removebg/c0.jpg",
+    model: "rmbg" as ModelType,
+  },
+  {
+    url: "https://cdn.isboyjc.com/picgo/removebg/d0.jpg",
+    model: "u2net" as ModelType,
+  },
+]
+
 export function Hero({ onImagesSelect }: HeroProps) {
   const [isDragging, setIsDragging] = useState(false)
   const [selectedModel, setLocalSelectedModel] = useState<ModelType>("u2net")
   const [u2netCached, setU2netCached] = useState(false)
   const [rmbgCached, setRmbgCached] = useState(false)
+  const [loadingExample, setLoadingExample] = useState<number | null>(null)
   const t = useTranslations("hero")
 
   // 加载保存的模型选择
@@ -87,8 +108,33 @@ export function Hero({ onImagesSelect }: HeroProps) {
     window.dispatchEvent(new Event("modelSelectionChange"))
   }, [])
 
+  // 处理快速示例点击
+  const handleExampleClick = useCallback(async (index: number) => {
+    const example = quickExamples[index]
+    setLoadingExample(index)
+
+    try {
+      // 从 URL 加载图片
+      const response = await fetch(example.url)
+      const blob = await response.blob()
+
+      // 从 URL 中提取文件名
+      const filename = example.url.split('/').pop() || 'example.jpg'
+
+      // 创建 File 对象
+      const file = new File([blob], filename, { type: blob.type })
+
+      // 调用 onImagesSelect，使用示例指定的模型
+      onImagesSelect([file], example.model)
+    } catch (error) {
+      console.error('Failed to load example image:', error)
+    } finally {
+      setLoadingExample(null)
+    }
+  }, [onImagesSelect])
+
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-28 pb-12 md:py-20 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-28 pb-12 md:pt-32 md:pb-20 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/30 rounded-full blur-3xl" />
@@ -293,6 +339,53 @@ export function Hero({ onImagesSelect }: HeroProps) {
             <Sparkles className="w-6 h-6" />
           </div>
         </label>
+
+        {/* Quick Examples */}
+        <motion.div
+          className="mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <div className="text-center mb-4">
+            <h3 className="text-sm font-bold mb-1">{t("quickExamples.title")}</h3>
+            <p className="text-xs text-muted-foreground">{t("quickExamples.subtitle")}</p>
+          </div>
+
+          <div className="grid grid-cols-4 gap-2 md:gap-3 max-w-md mx-auto">
+            {quickExamples.map((example, index) => (
+              <motion.button
+                key={index}
+                onClick={() => handleExampleClick(index)}
+                disabled={loadingExample !== null}
+                className="relative aspect-square rounded-lg border-2 border-foreground overflow-hidden bg-card shadow-[2px_2px_0_var(--foreground)] hover:shadow-[3px_3px_0_var(--foreground)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed group"
+                whileHover={{ scale: loadingExample === null ? 1.05 : 1 }}
+                whileTap={{ scale: loadingExample === null ? 0.95 : 1 }}
+              >
+                <img
+                  src={example.url}
+                  alt={`Example ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+
+                {/* Loading overlay */}
+                {loadingExample === index && (
+                  <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+                    <Loader2 className="w-5 h-5 text-white animate-spin" />
+                  </div>
+                )}
+
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-200" />
+
+                {/* Model badge */}
+                <div className="absolute bottom-0.5 right-0.5 px-1 py-0.5 bg-card/90 backdrop-blur-sm border border-foreground/50 rounded text-[9px] font-bold leading-none">
+                  {example.model === "u2net" ? "U2Net" : "RMBG"}
+                </div>
+              </motion.button>
+            ))}
+          </div>
+        </motion.div>
       </motion.div>
 
       {/* Feature tags */}

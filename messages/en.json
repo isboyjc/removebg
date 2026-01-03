@@ -49,6 +49,10 @@
     "modelStatus": {
       "ready": "Model Ready",
       "notReady": "Model download required"
+    },
+    "quickExamples": {
+      "title": "Quick Try",
+      "subtitle": "Click example images to test instantly"
     }
   },
   "editor": {

@@ -49,6 +49,10 @@
     "modelStatus": {
       "ready": "模型已就绪",
       "notReady": "首次使用需下载模型"
+    },
+    "quickExamples": {
+      "title": "快速体验",
+      "subtitle": "点击示例图片快速测试效果"
     }
   },
   "editor": {
