@@ -6,12 +6,18 @@ import { locales, type Locale } from "@/i18n/config"
 const descriptionsByLocale: Record<Locale, string> = {
   zh: "AI智能抠图 · 一键去除背景 · 本地浏览器处理",
   en: "AI Background Remover · One-click Remove · Local Browser Processing",
+  ja: "AI背景除去 · ワンクリック削除 · ローカルブラウザ処理",
+  ko: "AI 배경 제거 · 원클릭 제거 · 로컬 브라우저 처리",
+  ru: "AI удаление фона · Удаление одним кликом · Локальная обработка в браузере",
 }
 
 // 语言代码映射
 const localeToLangCode: Record<Locale, string> = {
   zh: "zh-CN",
   en: "en-US",
+  ja: "ja-JP",
+  ko: "ko-KR",
+  ru: "ru-RU",
 }
 
 export default async function manifest(): Promise<MetadataRoute.Manifest> {
@@ -47,6 +53,12 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
       const langLower = acceptLanguage.toLowerCase()
       if (langLower.includes("zh")) {
         detectedLocale = "zh"
+      } else if (langLower.includes("ja")) {
+        detectedLocale = "ja"
+      } else if (langLower.includes("ko")) {
+        detectedLocale = "ko"
+      } else if (langLower.includes("ru")) {
+        detectedLocale = "ru"
       }
     }
   }

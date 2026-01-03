@@ -14,12 +14,18 @@ export const contentType = "image/png"
 const subtitles: Record<Locale, string> = {
   zh: "AI 智能抠图 · 一键去除背景 · 隐私保护",
   en: "AI Background Remover · One-Click Remove · Privacy First",
+  ja: "AI背景除去 · ワンクリック削除 · プライバシー優先",
+  ko: "AI 배경 제거 · 원클릭 제거 · 개인정보 우선",
+  ru: "AI удаление фона · Удаление одним кликом · Конфиденциальность прежде всего",
 }
 
 // 各语言的标签
 const tags: Record<Locale, string[]> = {
   zh: ["🚀 秒级处理", "🔒 本地运行", "💯 完全免费", "📦 批量处理"],
   en: ["🚀 Fast", "🔒 Local", "💯 Free", "📦 Batch"],
+  ja: ["🚀 高速", "🔒 ローカル", "💯 無料", "📦 バッチ"],
+  ko: ["🚀 빠름", "🔒 로컬", "💯 무료", "📦 일괄"],
+  ru: ["🚀 Быстро", "🔒 Локально", "💯 Бесплатно", "📦 Пакетно"],
 }
 
 export default async function Image({ params }: { params: Promise<{ locale: string }> }) {

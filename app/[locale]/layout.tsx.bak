@@ -59,81 +59,18 @@ const keywordsByLocale: Record<Locale, string[]> = {
     "RMBG",
     "U2Net",
   ],
-  ja: [
-    "背景除去",
-    "AI背景除去",
-    "ワンクリック背景除去",
-    "画像背景除去",
-    "オンライン背景除去",
-    "無料背景除去",
-    "背景除去ツール",
-    "AI背景除去",
-    "スマート背景除去",
-    "透明背景",
-    "PNG背景除去",
-    "ポートレート背景除去",
-    "製品背景除去",
-    "ローカル処理",
-    "プライバシー保護",
-    "RMBG",
-    "U2Net",
-  ],
-  ko: [
-    "배경 제거",
-    "AI 배경 제거",
-    "원클릭 배경 제거",
-    "이미지 배경 제거",
-    "온라인 배경 제거",
-    "무료 배경 제거",
-    "배경 제거 도구",
-    "AI 배경 제거",
-    "스마트 배경 제거",
-    "투명 배경",
-    "PNG 배경 제거",
-    "인물 배경 제거",
-    "제품 배경 제거",
-    "로컬 처리",
-    "개인정보 보호",
-    "RMBG",
-    "U2Net",
-  ],
-  ru: [
-    "удалить фон",
-    "AI удаление фона",
-    "удаление фона одним кликом",
-    "удаление фона изображения",
-    "онлайн удаление фона",
-    "бесплатное удаление фона",
-    "инструмент удаления фона",
-    "AI удаление фона",
-    "умное удаление фона",
-    "прозрачный фон",
-    "PNG удаление фона",
-    "удаление фона портрета",
-    "удаление фона продукта",
-    "локальная о��работка",
-    "защита конфиденциальности",
-    "RMBG",
-    "U2Net",
-  ],
 }
 
 // Language codes mapping
 const localeToLanguageCode: Record<Locale, string> = {
   zh: "zh-CN",
   en: "en-US",
-  ja: "ja-JP",
-  ko: "ko-KR",
-  ru: "ru-RU",
 }
 
 // OpenGraph locale mapping
 const localeToOGLocale: Record<Locale, string> = {
   zh: "zh_CN",
   en: "en_US",
-  ja: "ja_JP",
-  ko: "ko_KR",
-  ru: "ru_RU",
 }
 
 export async function generateMetadata({
@@ -244,9 +181,6 @@ function getFeatureList(locale: Locale): string[] {
   const featureLists: Record<Locale, string[]> = {
     zh: ["AI智能抠图", "一键去除背景", "本地浏览器处理", "完全免费", "隐私保护", "多格式支持"],
     en: ["AI Smart Background Removal", "One-click Remove", "Local Browser Processing", "Completely Free", "Privacy Protection", "Multi-format Support"],
-    ja: ["AIスマート背景除去", "ワンクリック削除", "ローカルブラウザ処理", "完全無料", "プライバシー保護", "マルチフォーマットサポート"],
-    ko: ["AI 스마트 배경 제거", "원클릭 제거", "로컬 브라우저 처리", "완전 무료", "개인정보 보호", "다중 형식 지원"],
-    ru: ["AI умное удаление фона", "Удаление одним кликом", "Локальная обработка в браузере", "Полностью бесплатно", "Защита конфиденциальности", "Поддержка множества форматов"],
   }
   return featureLists[locale]
 }
@@ -256,9 +190,6 @@ function getKeywordsString(locale: Locale): string {
   const keywordsStrings: Record<Locale, string> = {
     zh: "去背景,AI抠图,一键抠图,图片去背景,在线抠图,免费抠图,智能抠图,透明背景",
     en: "remove background,AI background remover,one-click background removal,image background remover,online background remover,free background remover",
-    ja: "背景除去,AI背景除去,ワンクリック背景除去,画像背景除去,オンライン背景除去,無料背景除去,スマート背景除去,透明背景",
-    ko: "배경 제거,AI 배경 제거,원클릭 배경 제거,이미지 배경 제거,온라인 배경 제거,무료 배경 제거,스마트 배경 제거,투명 배경",
-    ru: "удалить фон,AI удаление фона,удаление фона одним кликом,удаление фона изображения,онлайн удаление фона,бесплатное удаление фона,умное удаление фона,прозрачный фон",
   }
   return keywordsStrings[locale]
 }

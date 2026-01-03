@@ -44,24 +44,45 @@ const altTextTemplates: Record<Locale, { original: string; comparison: string }>
     original: "AI background removal example {index} - {altKey} image before processing",
     comparison: "AI background removal example {index} - {altKey} image comparison animation"
   },
+  ja: {
+    original: "AI背景除去例{index} - {altKey}画像処理前",
+    comparison: "AI背景除去例{index} - {altKey}画像比較アニメーション"
+  },
+  ko: {
+    original: "AI 배경 제거 예제 {index} - {altKey} 이미지 처리 전",
+    comparison: "AI 배경 제거 예제 {index} - {altKey} 이미지 비교 애니메이션"
+  },
+  ru: {
+    original: "Пример удаления фона AI {index} - {altKey} изображение до обработки",
+    comparison: "Пример удаления фона AI {index} - {altKey} анимация сравнения изображений"
+  },
 }
 
 // 各语言的图库名称
 const galleryNames: Record<Locale, string> = {
   zh: "AI抠图效果展示",
   en: "AI Background Removal Examples",
+  ja: "AI背景除去例",
+  ko: "AI 배경 제거 예제",
+  ru: "Примеры удаления фона AI",
 }
 
 // 各语言的图片示例名称
 const exampleNames: Record<Locale, string> = {
   zh: "AI抠图示例",
   en: "AI Background Removal Example",
+  ja: "AI背景除去例",
+  ko: "AI 배경 제거 예제",
+  ru: "Пример удаления фона AI",
 }
 
 // 各语言的图片描述模板
 const descriptionTemplates: Record<Locale, string> = {
   zh: "使用Remove BG AI抠图工具处理的{altKey}图片效果展示",
   en: "{altKey} image processed with Remove BG AI background remover",
+  ja: "Remove BG AI背景除去ツールで処理された{altKey}画像",
+  ko: "Remove BG AI 배경 제거 도구로 처리된 {altKey} 이미지",
+  ru: "{altKey} изображение, обработанное инструментом Remove BG AI",
 }
 
 const containerVariants = {

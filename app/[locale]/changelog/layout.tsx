@@ -6,18 +6,27 @@ import { locales, type Locale } from "@/i18n/config"
 const localeToLanguageCode: Record<Locale, string> = {
   zh: "zh-CN",
   en: "en-US",
+  ja: "ja-JP",
+  ko: "ko-KR",
+  ru: "ru-RU",
 }
 
 // OpenGraph locale 映射
 const localeToOGLocale: Record<Locale, string> = {
   zh: "zh_CN",
   en: "en_US",
+  ja: "ja_JP",
+  ko: "ko_KR",
+  ru: "ru_RU",
 }
 
 // 各语言的更新日志标题
 const changelogTitles: Record<Locale, string> = {
   zh: "更新日志 - Remove BG",
   en: "Changelog - Remove BG",
+  ja: "変更履歴 - Remove BG",
+  ko: "변경 로그 - Remove BG",
+  ru: "История изменений - Remove BG",
 }
 
 export async function generateMetadata({

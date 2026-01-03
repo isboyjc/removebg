@@ -29,6 +29,9 @@ const versionsMeta: VersionMeta[] = [
 const changelogNames: Record<Locale, string> = {
   zh: "更新日志",
   en: "Changelog",
+  ja: "変更履歴",
+  ko: "변경 로그",
+  ru: "История изменений",
 }
 
 function getChangeIcon(type: string) {

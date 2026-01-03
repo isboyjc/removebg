@@ -1,0 +1,320 @@
+{
+  "theme": {
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム",
+    "toggle": "テーマを切り替え"
+  },
+  "metadata": {
+    "title": "Remove BG - AI背景除去ツール | RMBG-1.4",
+    "description": "無料のオンラインAI背景除去ツール。先進的なRMBG-1.4モデルを使用して画像の背景を瞬時に削除。プライバシー保護のため完全にブラウザ内で実行。登録不要。"
+  },
+  "nav": {
+    "title": "背景除去"
+  },
+  "hero": {
+    "badge": "AI搭載 · 無料で使用",
+    "title": {
+      "line1": "画像の",
+      "line2": "",
+      "highlight": "背景を削除"
+    },
+    "description": "先進的なAI技術を使用して、画像の背景を瞬時に削除します。",
+    "descriptionSub": "登録不要。プライバシー保護のため、すべてブラウザ内で処理されます。",
+    "cleanup": {
+      "text": "透かし除去"
+    },
+    "models": {
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "recommended": "推奨",
+      "ready": "準備完了",
+      "notReady": "未準備"
+    },
+    "upload": {
+      "dragging": "ドロップしてアップロード",
+      "default": "画像をここにドラッグ＆ドロップ",
+      "or": "または",
+      "click": "クリックしてファイルを選択",
+      "formats": "JPG、PNG、WebP対応",
+      "batch": "バッチ"
+    },
+    "tags": {
+      "batch": "📦 バッチ処理",
+      "fast": "🚀 高速処理",
+      "local": "🔒 ローカル処理",
+      "free": "💯 完全無料",
+      "quality": "✨ 高品質"
+    },
+    "modelStatus": {
+      "ready": "モデル準備完了",
+      "notReady": "モデルのダウンロードが必要"
+    },
+    "quickExamples": {
+      "title": "クイック体験",
+      "subtitle": "サンプル画像をクリックして即座にテスト"
+    }
+  },
+  "editor": {
+    "title": "画像エディター",
+    "toolbar": {
+      "close": "エディターを閉じる",
+      "download": "PNGをダウンロード",
+      "downloadAria": "透明PNGをダウンロード"
+    },
+    "toolPanel": {
+      "tools": "編集ツール",
+      "undo": "元に戻す",
+      "redo": "やり直す",
+      "zoomIn": "拡大",
+      "zoomOut": "縮小",
+      "zoomReset": "ズームをリセット",
+      "fitToScreen": "画面に合わせる",
+      "compare": "前後を比較",
+      "exitCompare": "比較を終了",
+      "exitComparison": "比較を終了",
+      "historyControls": "履歴コントロール",
+      "zoomControls": "ズームコントロール",
+      "resetZoomAria": "ズームをリセット: {percentage}%",
+      "backgroundColor": "背景色",
+      "download": "PNGをダウンロード",
+      "downloadAria": "透明PNGをダウンロード",
+      "switchModel": "モデルを切り替え",
+      "selectModel": "モデルを選択"
+    },
+    "modelSwitcher": {
+      "title": "モデルを切り替え",
+      "ready": "準備完了",
+      "notReady": "未準備",
+      "downloading": "ダウンロード中...",
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "u2netDesc": "一般的な用途に最適（推奨）",
+      "rmbgDesc": "特定のシナリオでより良い結果が得られる場合があります"
+    },
+    "modelLabel": {
+      "generatedWith": "{model}で生成"
+    },
+    "compare": {
+      "original": "オリジナル",
+      "noBackground": "背景なし"
+    },
+    "modelLoading": {
+      "loading": "読み込み中",
+      "downloading": "ダウンロード中",
+      "model": "モデル",
+      "loadingFromCache": "キャッシュから{modelName}を読み込み中",
+      "downloadingFirstTime": "初回{modelName}モデルをダウンロード中",
+      "cachedInfo": "モデルは今後の使用のためにブラウザにキャッシュされます"
+    },
+    "backgroundColorPicker": {
+      "title": "背景色",
+      "customColor": "カスタムカラー",
+      "apply": "適用",
+      "invalidHex": "有効な16進数カラーコードを入力してください",
+      "colors": {
+        "transparent": "透明",
+        "white": "白",
+        "black": "黒",
+        "lightGray": "ライトグレー",
+        "gray": "グレー",
+        "darkGray": "ダークグレー",
+        "red": "赤",
+        "pink": "ピンク",
+        "orange": "オレンジ",
+        "gold": "ゴールド",
+        "yellow": "黄色",
+        "lightGreen": "ライトグリーン",
+        "green": "緑",
+        "darkGreen": "ダークグリーン",
+        "cyan": "シアン",
+        "skyBlue": "スカイブルー",
+        "blue": "青",
+        "darkBlue": "ダークブルー",
+        "purple": "紫",
+        "magenta": "マゼンタ",
+        "brown": "茶色",
+        "beige": "ベージュ",
+        "olive": "オリーブ",
+        "navy": "ネイビー"
+      }
+    },
+    "batch": {
+      "downloadAll": "すべてダウンロード"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "model": {
+      "label": "モデル",
+      "select": "モデルを選択",
+      "rmbg": "RMBG-1.4",
+      "description": "背景除去モデルを選択",
+      "u2netDesc": "一般的な用途に最適（推奨）",
+      "rmbgDesc": "特定のシナリオでより良い結果が得られる場合があります",
+      "noteTitle": "注意：",
+      "noteDescription": "モデルの選択は背景除去の品質と処理速度に影響します。最高の除去品質を得るにはU2Netをお勧めします。"
+    }
+  },
+  "accessibility": {
+    "skipToContent": "メインコンテンツにスキップ",
+    "openMenu": "メニューを開く",
+    "closeMenu": "メニューを閉じる",
+    "toggleTheme": "テーマを切り替え",
+    "switchLanguage": "言語を切り替え",
+    "uploadImage": "画像をアップロード",
+    "selectFile": "アップロードするファイルを選択"
+  },
+  "footer": {
+    "builtWith": "構築：",
+    "and": "とAI",
+    "copyright": "RMBGとU2Netモデルを使用し、ブラウザ内でONNX Runtime Webで実行。",
+    "changelog": "変更履歴",
+    "friendLinks": "リソース"
+  },
+  "capabilities": {
+    "badge": "強力な機能",
+    "title": "なぜ選ぶ",
+    "highlight": "Remove BG",
+    "description": "AI技術を搭載したプロフェッショナルな背景除去ツール。完全無料でプライバシー重視。",
+    "items": {
+      "aiPowered": {
+        "title": "AI搭載",
+        "description": "精密なエッジ検出と背景除去のための先進的な深層学習モデル。"
+      },
+      "batch": {
+        "title": "バッチ処理",
+        "description": "一度に複数の画像を処理。必要なだけアップロードして、すべてZIPでダウンロード。"
+      },
+      "privacy": {
+        "title": "プライバシー第一",
+        "description": "すべての処理はブラウザ内でローカルに行われます。画像がデバイスから離れることはありません。"
+      },
+      "free": {
+        "title": "完全無料",
+        "description": "登録不要、透かしなし、制限なし。好きなだけ使用できます。"
+      },
+      "fast": {
+        "title": "超高速",
+        "description": "最適化されたAIモデルとWebAssemblyアクセラレーションで数秒で画像を処理。"
+      },
+      "dualModel": {
+        "title": "デュアルAIモデル",
+        "description": "一般用途にはU2Net、特定のシナリオにはRMBG。必要に応じて切り替え。"
+      },
+      "formats": {
+        "title": "複数フォーマット",
+        "description": "JPG、PNG、WebP入力をサポート。透明PNGとしてエクスポート。"
+      },
+      "pwa": {
+        "title": "オフライン動作",
+        "description": "アプリとしてインストールして、インターネット接続なしでもどこでも使用できます。"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "使い方",
+    "highlight": "ガイド",
+    "description": "簡単なステップで画像の背景を削除します。",
+    "steps": {
+      "upload": {
+        "title": "画像をアップロード",
+        "description": "ドラッグ＆ドロップまたはクリックして画像ファイルを選択。"
+      },
+      "selectModel": {
+        "title": "モデルを選択",
+        "description": "U2Netを推奨、特定のケースではRMBGを試してください。"
+      },
+      "process": {
+        "title": "AI処理",
+        "description": "AIが自動的に背景を検出して削除します。"
+      },
+      "preview": {
+        "title": "結果をプレビュー",
+        "description": "インタラクティブなプレビューで前後を比較。"
+      },
+      "download": {
+        "title": "ダウンロード",
+        "description": "ワンクリックで透明PNG画像を保存。"
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "よくある",
+    "highlight": "質問",
+    "description": "Remove BGに関するよくある質問への回答。",
+    "moreQuestions": "他に質問がありますか？",
+    "items": {
+      "howItWorks": {
+        "question": "背景除去はどのように機能しますか？",
+        "answer": "WebAssemblyとONNX Runtimeを使用してブラウザ内で完全に実行される先進的なAIモデル（**U2Net**と**RMBG-1.4**）を使用しています。AIが画像を分析し、前景の被写体を検出し、背景を自動的に削除します。"
+      },
+      "models": {
+        "question": "U2NetとRMBGの違いは何ですか？",
+        "answer": "**U2Net**は一般的な用途でより良く機能し、ほとんどの画像に適しています - 最初に使用することをお勧めします。**RMBG-1.4**は特定のシナリオでより良いパフォーマンスを発揮する場合があり、代替として試すことができます。"
+      },
+      "privacy": {
+        "question": "データは安全ですか？",
+        "answer": "**絶対に安全です！**すべての画像処理はブラウザ内でローカルに行われます。画像がサーバーにアップロードされることはありません。AIモデルは一度ダウンロードされ、今後の使用のためにブラウザにキャッシュされます。"
+      },
+      "formats": {
+        "question": "どの画像フォーマットがサポートされていますか？",
+        "answer": "**JPG**、**PNG**、**WebP**フォーマットの画像をアップロードできます。出力は常にどこでも使用できる**透明PNG**ファイルです。"
+      },
+      "speed": {
+        "question": "処理にはどのくらい時間がかかりますか？",
+        "answer": "処理時間は画像サイズとデバイスによって異なります。通常、ほとんどの画像で**2〜10秒**かかります。初回使用時はAIモデルをダウンロードしてキャッシュする必要があるため、時間がかかる場合があります。"
+      },
+      "quality": {
+        "question": "最高の結果を得るにはどうすればよいですか？",
+        "answer": "最高の結果を得るには：**1)** 被写体が明確な高品質の画像を使用。**2)** 複雑な背景にはU2Netモデルを選択。**3)** 被写体と背景の間に良好なコントラストを確保。**4)** 過度に圧縮された画像は避ける。"
+      }
+    }
+  },
+  "examples": {
+    "badge": "実際の動作",
+    "title": "実際の",
+    "highlight": "例",
+    "description": "ホバーして背景除去アニメーションを見て、強力なAI処理を体験",
+    "hoverHint": "ホバーしてプレビュー",
+    "playing": "再生中",
+    "example": "例",
+    "showingResult": "結果を表示",
+    "beforeAfter": "前後",
+    "original": "オリジナル",
+    "comparison": "比較",
+    "footerHint": "上記のすべての例は、ブラウザ内でRemove BGによってリアルタイムで処理されました"
+  },
+  "changelog": {
+    "title": "変更",
+    "highlight": "履歴",
+    "description": "Remove BGのバージョン更新と新機能を追跡",
+    "back": "ホームに戻る",
+    "types": {
+      "major": "メジャーアップデート",
+      "minor": "機能アップデート",
+      "patch": "バグ修正"
+    },
+    "moreUpdates": "詳細な更新情報：",
+    "versions": {
+      "v1_0_0": {
+        "changes": [
+          { "type": "feature", "text": "U2NetとRMBG-1.4モデルを使用したAI搭載背景除去" },
+          { "type": "feature", "text": "プライバシー保護のため完全にブラウザ内で実行" },
+          { "type": "feature", "text": "バッチ画像処理 - 一度に複数の画像をアップロード" },
+          { "type": "feature", "text": "ZIPアーカイブとしてバッチダウンロード" },
+          { "type": "feature", "text": "JPG、PNG、WebP入力フォーマットをサポート" },
+          { "type": "feature", "text": "高品質の透明PNG画像をエクスポート" },
+          { "type": "feature", "text": "リアルタイムの前後比較プレビュー" },
+          { "type": "feature", "text": "24のプリセットオプションでカスタマイズ可能な背景色" },
+          { "type": "feature", "text": "デュアルモデル切り替え：一般用途にはU2Net推奨、特定のシナリオにはRMBG" },
+          { "type": "feature", "text": "ローカルモデルキャッシング - 再ダウンロード不要" },
+          { "type": "feature", "text": "PWAサポート - オフライン使用のためにローカルアプリとしてインストール" },
+          { "type": "feature", "text": "ライト/ダークテーマサポート付きのネオブルータリズムデザイン" },
+          { "type": "feature", "text": "多言語サポート（日本語、英語、中国語、韓国語、ロシア語）" }
+        ]
+      }
+    }
+  }
+}

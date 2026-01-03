@@ -1,0 +1,320 @@
+{
+  "theme": {
+    "light": "라이트",
+    "dark": "다크",
+    "system": "시스템",
+    "toggle": "테마 전환"
+  },
+  "metadata": {
+    "title": "Remove BG - AI 배경 제거 도구 | RMBG-1.4",
+    "description": "무료 온라인 AI 배경 제거 도구. 고급 RMBG-1.4 모델을 사용하여 이미지 배경을 즉시 제거합니다. 개인정보 보호를 위해 완전히 브라우저에서 실행됩니다. 등록 불필요."
+  },
+  "nav": {
+    "title": "배경 제거"
+  },
+  "hero": {
+    "badge": "AI 기반 · 무료 사용",
+    "title": {
+      "line1": "이미지",
+      "line2": "",
+      "highlight": "배경 제거"
+    },
+    "description": "고급 AI 기술을 사용하여 이미지 배경을 즉시 제거합니다.",
+    "descriptionSub": "등록 불필요. 개인정보 보호를 위해 모든 처리가 브라우저에서 이루어집니다.",
+    "cleanup": {
+      "text": "워터마크 제거"
+    },
+    "models": {
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "recommended": "추천",
+      "ready": "준비 완료",
+      "notReady": "준비 안됨"
+    },
+    "upload": {
+      "dragging": "드롭하여 업로드",
+      "default": "이미지를 여기에 드래그 앤 드롭",
+      "or": "또는",
+      "click": "클릭하여 파일 선택",
+      "formats": "JPG, PNG, WebP 지원",
+      "batch": "일괄"
+    },
+    "tags": {
+      "batch": "📦 일괄 처리",
+      "fast": "🚀 빠른 처리",
+      "local": "🔒 로컬 처리",
+      "free": "💯 완전 무료",
+      "quality": "✨ 고품질"
+    },
+    "modelStatus": {
+      "ready": "모델 준비 완료",
+      "notReady": "모델 다운로드 필요"
+    },
+    "quickExamples": {
+      "title": "빠른 체험",
+      "subtitle": "예제 이미지를 클릭하여 즉시 테스트"
+    }
+  },
+  "editor": {
+    "title": "이미지 편집기",
+    "toolbar": {
+      "close": "편집기 닫기",
+      "download": "PNG 다운로드",
+      "downloadAria": "투명 PNG 다운로드"
+    },
+    "toolPanel": {
+      "tools": "편집 도구",
+      "undo": "실행 취소",
+      "redo": "다시 실행",
+      "zoomIn": "확대",
+      "zoomOut": "축소",
+      "zoomReset": "확대/축소 재설정",
+      "fitToScreen": "화면에 맞추기",
+      "compare": "전후 비교",
+      "exitCompare": "비교 종료",
+      "exitComparison": "비교 종료",
+      "historyControls": "기록 제어",
+      "zoomControls": "확대/축소 제어",
+      "resetZoomAria": "확대/축소 재설정: {percentage}%",
+      "backgroundColor": "배경색",
+      "download": "PNG 다운로드",
+      "downloadAria": "투명 PNG 다운로드",
+      "switchModel": "모델 전환",
+      "selectModel": "모델 선택"
+    },
+    "modelSwitcher": {
+      "title": "모델 전환",
+      "ready": "준비 완료",
+      "notReady": "준비 안됨",
+      "downloading": "다운로드 중...",
+      "u2net": "U2Net",
+      "rmbg": "RMBG-1.4",
+      "u2netDesc": "일반적인 용도에 더 적합 (추천)",
+      "rmbgDesc": "특정 시나리오에서 더 나은 결과를 얻을 수 있습니다"
+    },
+    "modelLabel": {
+      "generatedWith": "{model}로 생성됨"
+    },
+    "compare": {
+      "original": "원본",
+      "noBackground": "배경 없음"
+    },
+    "modelLoading": {
+      "loading": "로딩 중",
+      "downloading": "다운로드 중",
+      "model": "모델",
+      "loadingFromCache": "캐시에서 {modelName} 로딩 중",
+      "downloadingFirstTime": "처음으로 {modelName} 모델 다운로드 중",
+      "cachedInfo": "모델은 향후 사용을 위해 브라우저에 캐시됩니다"
+    },
+    "backgroundColorPicker": {
+      "title": "배경색",
+      "customColor": "사용자 정의 색상",
+      "apply": "적용",
+      "invalidHex": "유효한 16진수 색상 코드를 입력하세요",
+      "colors": {
+        "transparent": "투명",
+        "white": "흰색",
+        "black": "검은색",
+        "lightGray": "밝은 회색",
+        "gray": "회색",
+        "darkGray": "어두운 회색",
+        "red": "빨간색",
+        "pink": "분홍색",
+        "orange": "주황색",
+        "gold": "금색",
+        "yellow": "노란색",
+        "lightGreen": "밝은 녹색",
+        "green": "녹색",
+        "darkGreen": "어두운 녹색",
+        "cyan": "청록색",
+        "skyBlue": "하늘색",
+        "blue": "파란색",
+        "darkBlue": "어두운 파란색",
+        "purple": "보라색",
+        "magenta": "자홍색",
+        "brown": "갈색",
+        "beige": "베이지색",
+        "olive": "올리브색",
+        "navy": "네이비색"
+      }
+    },
+    "batch": {
+      "downloadAll": "모두 다운로드"
+    }
+  },
+  "settings": {
+    "title": "설정",
+    "model": {
+      "label": "모델",
+      "select": "모델 선택",
+      "rmbg": "RMBG-1.4",
+      "description": "배경 제거 모델 선택",
+      "u2netDesc": "일반적인 용도에 더 적합 (추천)",
+      "rmbgDesc": "특정 시나리오에서 더 나은 결과를 얻을 수 있습니다",
+      "noteTitle": "참고:",
+      "noteDescription": "모델 선택은 배경 제거 품질과 처리 속도에 영향을 미칩니다. 최상의 제거 품질을 위해 U2Net을 권장합니다."
+    }
+  },
+  "accessibility": {
+    "skipToContent": "메인 콘텐츠로 건너뛰기",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
+    "toggleTheme": "테마 전환",
+    "switchLanguage": "언어 전환",
+    "uploadImage": "이미지 업로드",
+    "selectFile": "업로드할 파일 선택"
+  },
+  "footer": {
+    "builtWith": "제작:",
+    "and": "및 AI",
+    "copyright": "RMBG 및 U2Net 모델을 사용하여 브라우저에서 ONNX Runtime Web으로 실행됩니다.",
+    "changelog": "변경 로그",
+    "friendLinks": "리소스"
+  },
+  "capabilities": {
+    "badge": "강력한 기능",
+    "title": "왜 선택하나요",
+    "highlight": "Remove BG",
+    "description": "AI 기술을 갖춘 전문 배경 제거 도구. 완전 무료이며 개인정보 보호에 중점을 둡니다.",
+    "items": {
+      "aiPowered": {
+        "title": "AI 기반",
+        "description": "정밀한 엣지 감지 및 배경 제거를 위한 고급 딥러닝 모델."
+      },
+      "batch": {
+        "title": "일괄 처리",
+        "description": "한 번에 여러 이미지를 처리합니다. 필요한 만큼 업로드하고 모두 ZIP으로 다운로드하세요."
+      },
+      "privacy": {
+        "title": "개인정보 우선",
+        "description": "모든 처리는 브라우저에서 로컬로 이루어집니다. 이미지가 기기를 떠나지 않습니다."
+      },
+      "free": {
+        "title": "완전 무료",
+        "description": "등록 불필요, 워터마크 없음, 제한 없음. 원하는 만큼 사용하세요."
+      },
+      "fast": {
+        "title": "초고속",
+        "description": "최적화된 AI 모델과 WebAssembly 가속으로 몇 초 만에 이미지를 처리합니다."
+      },
+      "dualModel": {
+        "title": "듀얼 AI 모델",
+        "description": "일반 용도에는 U2Net, 특정 시나리오에는 RMBG. 필요에 따라 전환하세요."
+      },
+      "formats": {
+        "title": "다중 형식",
+        "description": "JPG, PNG, WebP 입력을 지원합니다. 투명 PNG로 내보내기."
+      },
+      "pwa": {
+        "title": "오프라인 작동",
+        "description": "앱으로 설치하여 인터넷 연결 없이도 어디서나 사용할 수 있습니다."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "사용 방법",
+    "highlight": "가이드",
+    "description": "간단한 단계로 이미지 배경을 제거합니다.",
+    "steps": {
+      "upload": {
+        "title": "이미지 업로드",
+        "description": "드래그 앤 드롭하거나 클릭하여 이미지 파일을 선택하세요."
+      },
+      "selectModel": {
+        "title": "모델 선택",
+        "description": "U2Net을 권장하며, 특정 경우에는 RMBG를 시도해보세요."
+      },
+      "process": {
+        "title": "AI 처리",
+        "description": "AI가 자동으로 배경을 감지하고 제거합니다."
+      },
+      "preview": {
+        "title": "결과 미리보기",
+        "description": "대화형 미리보기로 전후를 비교하세요."
+      },
+      "download": {
+        "title": "다운로드",
+        "description": "한 번의 클릭으로 투명 PNG 이미지를 저장하세요."
+      }
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "자주 묻는",
+    "highlight": "질문",
+    "description": "Remove BG에 대한 자주 묻는 질문에 대한 답변.",
+    "moreQuestions": "더 궁금한 점이 있으신가요?",
+    "items": {
+      "howItWorks": {
+        "question": "배경 제거는 어떻게 작동하나요?",
+        "answer": "WebAssembly와 ONNX Runtime을 사용하여 브라우저에서 완전히 실행되는 고급 AI 모델(**U2Net** 및 **RMBG-1.4**)을 사용합니다. AI가 이미지를 분석하고 전경 피사체를 감지하며 배경을 자동으로 제거합니다."
+      },
+      "models": {
+        "question": "U2Net과 RMBG의 차이점은 무엇인가요?",
+        "answer": "**U2Net**은 일반적인 사용 사례에서 더 잘 작동하며 대부분의 이미지에 적합합니다 - 먼저 사용하는 것을 권장합니다. **RMBG-1.4**는 특정 시나리오에서 더 나은 성능을 발휘할 수 있으며 대안으로 시도해볼 수 있습니다."
+      },
+      "privacy": {
+        "question": "내 데이터는 안전한가요?",
+        "answer": "**절대적으로 안전합니다!** 모든 이미지 처리는 브라우저에서 로컬로 이루어집니다. 이미지가 서버에 업로드되지 않습니다. AI 모델은 한 번 다운로드되어 향후 사용을 위해 브라우저에 캐시됩니다."
+      },
+      "formats": {
+        "question": "어떤 이미지 형식이 지원되나요?",
+        "answer": "**JPG**, **PNG**, **WebP** 형식의 이미지를 업로드할 수 있습니다. 출력은 항상 어디서나 사용할 수 있는 **투명 PNG** 파일입니다."
+      },
+      "speed": {
+        "question": "처리에 얼마나 걸리나요?",
+        "answer": "처리 시간은 이미지 크기와 기기에 따라 다릅니다. 일반적으로 대부분의 이미지는 **2-10초**가 걸립니다. 첫 사용 시 AI 모델을 다운로드하고 캐시해야 하므로 시간이 더 걸릴 수 있습니다."
+      },
+      "quality": {
+        "question": "최상의 결과를 얻으려면 어떻게 해야 하나요?",
+        "answer": "최상의 결과를 얻으려면: **1)** 피사체가 명확한 고품질 이미지를 사용하세요. **2)** 복잡한 배경에는 U2Net 모델을 선택하세요. **3)** 피사체와 배경 사이에 좋은 대비를 확보하세요. **4)** 과도하게 압축된 이미지는 피하세요."
+      }
+    }
+  },
+  "examples": {
+    "badge": "실제 동작",
+    "title": "실제",
+    "highlight": "예제",
+    "description": "호버하여 배경 제거 애니메이션을 보고 강력한 AI 처리를 경험하세요",
+    "hoverHint": "호버하여 미리보기",
+    "playing": "재생 중",
+    "example": "예제",
+    "showingResult": "결과 표시",
+    "beforeAfter": "전후",
+    "original": "원본",
+    "comparison": "비교",
+    "footerHint": "위의 모든 예제는 브라우저에서 Remove BG에 의해 실시간으로 처리되었습니다"
+  },
+  "changelog": {
+    "title": "변경",
+    "highlight": "로그",
+    "description": "Remove BG 버전 업데이트 및 새로운 기능 추적",
+    "back": "홈으로 돌아가기",
+    "types": {
+      "major": "주요 업데이트",
+      "minor": "기능 업데이트",
+      "patch": "버그 수정"
+    },
+    "moreUpdates": "더 많은 업데이트 보기:",
+    "versions": {
+      "v1_0_0": {
+        "changes": [
+          { "type": "feature", "text": "U2Net 및 RMBG-1.4 모델을 사용한 AI 기반 배경 제거" },
+          { "type": "feature", "text": "개인정보 보호를 위해 완전히 브라우저에서 실행" },
+          { "type": "feature", "text": "일괄 이미지 처리 - 한 번에 여러 이미지 업로드" },
+          { "type": "feature", "text": "ZIP 아카이브로 일괄 다운로드" },
+          { "type": "feature", "text": "JPG, PNG, WebP 입력 형식 지원" },
+          { "type": "feature", "text": "고품질 투명 PNG 이미지 내보내기" },
+          { "type": "feature", "text": "실시간 전후 비교 미리보기" },
+          { "type": "feature", "text": "24개의 프리셋 옵션으로 사용자 정의 가능한 배경색" },
+          { "type": "feature", "text": "듀얼 모델 전환: 일반 용도에는 U2Net 권장, 특정 시나리오에는 RMBG" },
+          { "type": "feature", "text": "로컬 모델 캐싱 - 재다운로드 불필요" },
+          { "type": "feature", "text": "PWA 지원 - 오프라인 사용을 위해 로컬 앱으로 설치" },
+          { "type": "feature", "text": "라이트/다크 테마 지원이 있는 네오 브루탈리즘 디자인" },
+          { "type": "feature", "text": "다국어 지원 (한국어, 영어, 중국어, 일본어, 러시아어)" }
+        ]
+      }
+    }
+  }
+}
