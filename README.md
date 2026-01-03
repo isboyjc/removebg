@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="app/icon.svg" alt="Remove BG Logo" width="120" />
+<img src="public/icon.svg" alt="Remove BG Logo" width="120" />
 
 # Remove BG
 
 **AI 驱动的智能抠图工具 | AI-Powered Background Remover**
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-removebg.picgo.studio-blue?style=for-the-badge)](https://removebg.picgo.studio)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-rmbg.picgo.studio-blue?style=for-the-badge)](https://rmbg.picgo.studio)
 [![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge)](https://github.com/isboyjc/removebg/releases)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
